@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Consultants\\MetroIstanbul\\MetroIstanbul-Mar-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj": {}
+    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Integral-DotnetCore-Sep-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Consultants\\MetroIstanbul\\MetroIstanbul-Mar-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj": {
+    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Integral-DotnetCore-Sep-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Consultants\\MetroIstanbul\\MetroIstanbul-Mar-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj",
-        "projectName": "CSD.Data",
-        "projectPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Consultants\\MetroIstanbul\\MetroIstanbul-Mar-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj",
-        "packagesPath": "C:\\Users\\oguzkaran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Consultants\\MetroIstanbul\\MetroIstanbul-Mar-2022\\src\\Libraries\\DataUtilLib\\obj\\",
+        "projectUniqueName": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Integral-DotnetCore-Sep-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj",
+        "projectName": "CSD.Util.Data",
+        "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Integral-DotnetCore-Sep-2022\\src\\Libraries\\DataUtilLib\\DataUtilLib.csproj",
+        "packagesPath": "C:\\Users\\Karans\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Integral-DotnetCore-Sep-2022\\src\\Libraries\\DataUtilLib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\oguzkaran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Karans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -60,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

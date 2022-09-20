@@ -1,7 +1,6 @@
-﻿namespace CSD.Util.Data.Repository
+﻿namespace CSD.Util.Data.Repository;
+
+public interface IEntity<ID>
 {
-    public interface IEntity<ID>
-    {
-        public ID Id { get; set; }
-    }
+    public ID Id { get; set; }
 }

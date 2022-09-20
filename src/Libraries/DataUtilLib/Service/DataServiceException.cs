@@ -1,21 +1,20 @@
 ﻿using System;
 
-namespace CSD.Util.Data.Service
+namespace CSD.Util.Data.Service;
+
+public class DataServiceException : Exception
 {
-    public class DataServiceException : Exception
+    public DataServiceException(string message, Exception innerException)
+        : base(message, innerException)
+    { }
+
+    public override string Message
     {
-        public DataServiceException(string message, Exception innerException)
-            : base(message, innerException)
-        { }
-
-        public override string Message
+        get
         {
-            get
-            {
-                var msg = InnerException != null ? ", InnerException Message:" + InnerException.Message : "";
+            var msg = InnerException != null ? ", InnerException Message:" + InnerException.Message : "";
 
-                return $"Message:{base.Message}{msg}";
-            }
+            return $"Message:{base.Message}{msg}";
         }
     }
 }

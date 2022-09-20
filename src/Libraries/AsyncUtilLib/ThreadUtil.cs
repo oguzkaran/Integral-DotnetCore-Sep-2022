@@ -5,26 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace CSD.Util.Async
+namespace CSD.Util.Async;
+
+public class ThreadUtil
 {
-    public class ThreadUtil
+    public static Thread CreateThread(ParameterizedThreadStart threadStart, bool isBackground = true)
     {
-        public static Thread CreateThread(ParameterizedThreadStart threadStart, bool isBackground = true)
-        {
-            var thread = new Thread(threadStart);
+        var thread = new Thread(threadStart);
 
-            thread.IsBackground = isBackground;
+        thread.IsBackground = isBackground;
 
-            return thread;
-        }
+        return thread;
+    }
 
-        public static Thread CreateThread(ThreadStart threadStart, bool isBackground = true)
-        {
-            var thread = new Thread(threadStart);
+    public static Thread CreateThread(ThreadStart threadStart, bool isBackground = true)
+    {
+        var thread = new Thread(threadStart);
 
-            thread.IsBackground = isBackground;
+        thread.IsBackground = isBackground;
 
-            return thread;
-        }
+        return thread;
     }
 }
