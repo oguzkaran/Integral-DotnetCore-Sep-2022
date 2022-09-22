@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Integral.CRM.Data.Repository.Entity;
+﻿using Integral.CRM.Data.Repository.Entity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Integral.CRM.Data.Repository;
 
@@ -24,7 +21,7 @@ public partial class IntegralCrmdbContext : DbContext
         if (optionsBuilder.IsConfigured)
             return;
 
-        optionsBuilder.UseSqlServer("Server = aws-mssql.cct1ehgoywdp.us-east-2.rds.amazonaws.com; Database = integral_crmdb; User Id = admin; Password = csystem1993;");            
+        optionsBuilder.UseSqlServer("Server = aws-mssql.cct1ehgoywdp.us-east-2.rds.amazonaws.com; Database = integral_crmdb; User Id = admin; Password = csystem1993;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

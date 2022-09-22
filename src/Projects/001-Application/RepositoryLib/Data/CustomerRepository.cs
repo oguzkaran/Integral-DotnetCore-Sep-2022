@@ -1,10 +1,6 @@
 ﻿using Integral.CRM.Data.Repository.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using static CSD.Util.Async.TaskUtil;
 
 namespace Integral.CRM.Data.Repository;
@@ -16,18 +12,12 @@ public class CustomerRepository : ICustomerRepository
     #region callback methods
     private Customer saveAsyncCallback(Customer customer)
     {
-        //...
+        m_context.Database.ExecuteSqlRaw("exec sp_insert_customer {0}, {1}", customer.CustomerName, customer.CustomerAddress);
+        
         return customer;
     }
 
-    private IEnumerable<Customer> findByNameCallback(string name)
-    {
-        var list = new List<Customer>();
-
-        //...
-
-        return list;
-    }
+    private IEnumerable<Customer> findByNameCallback(string name) => m_context.Customers.FromSqlRaw("exec sp_get_customer_by_name", name).ToList();  
 
     private IEnumerable<Customer> findByNameContainsCallback(string name)
     {
@@ -55,7 +45,7 @@ public class CustomerRepository : ICustomerRepository
     #endregion
 
     public Task<long> CountAsync()
-    {
+    {        
         throw new NotImplementedException();
     }
 

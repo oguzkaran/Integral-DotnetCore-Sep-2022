@@ -22,15 +22,3 @@ C:\Users\oguzkaran\Dropbox\CSD\Consultants\MetroIstanbul\MetroIstanbul-Mar-2022\
 C:\Users\oguzkaran\Dropbox\CSD\Consultants\MetroIstanbul\MetroIstanbul-Mar-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\refint\CSD.Data.dll
 C:\Users\oguzkaran\Dropbox\CSD\Consultants\MetroIstanbul\MetroIstanbul-Mar-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\CSD.Data.pdb
 C:\Users\oguzkaran\Dropbox\CSD\Consultants\MetroIstanbul\MetroIstanbul-Mar-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\ref\CSD.Data.dll
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\DataUtilLib.csproj.AssemblyReference.cache
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\DataUtilLib.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\DataUtilLib.AssemblyInfoInputs.cache
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\DataUtilLib.AssemblyInfo.cs
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\DataUtilLib.csproj.CoreCompileInputs.cache
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\bin\Release\net6.0\CSD.Util.Data.deps.json
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\bin\Release\net6.0\CSD.Util.Data.dll
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\bin\Release\net6.0\CSD.Util.Data.pdb
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\CSD.Util.Data.dll
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\refint\CSD.Util.Data.dll
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\CSD.Util.Data.pdb
-C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\DataUtilLib\obj\Release\net6.0\ref\CSD.Util.Data.dll

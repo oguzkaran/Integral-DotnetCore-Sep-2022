@@ -14,17 +14,21 @@ namespace Integral.CRM.Data.DAL;
 public class IntegralCRMAppHelper
 {
     private readonly ICustomerRepository m_customerRepository;
+    private readonly ICustomerInfoRepository m_customerInfoRepository;
     //...
 
-    public IntegralCRMAppHelper(ICustomerRepository customerRepository)
+    public IntegralCRMAppHelper(ICustomerRepository customerRepository, ICustomerInfoRepository customerInfoRepository)
     {
         m_customerRepository = customerRepository;
+        m_customerInfoRepository = customerInfoRepository;
     }
 
     public Task<Customer> SaveCustomerAsync(Customer customer)
         => SubscribeRepositoryAsync(() => m_customerRepository.SaveAsync(customer), "IntegralCRMAppHelper.SaveCustomerAsync");
 
-    public Task<IEnumerable<Customer>> FindCustomerByNameAsync(string text) => SubscribeRepositoryAsync(() => m_customerRepository.FindByNameAsync(text), "IntegralCRMAppHelper.FindCustomerByNameAsync");
+    public Task<IEnumerable<Customer>> FindCustomerByNameAsync(string name) => SubscribeRepositoryAsync(() => m_customerRepository.FindByNameAsync(name), "IntegralCRMAppHelper.FindCustomerByNameAsync");
+
+    public Task<IEnumerable<CustomerInfo>> FindCustomerInfoByNameAsync(string name) => SubscribeRepositoryAsync(() => m_customerInfoRepository.FindByNameAsync(name), "IntegralCRMAppHelper.FindCustomerInfoByNameAsync");
 
     public Task<IEnumerable<Customer>> FindCustomerByNameContainsAsync(string text) => SubscribeRepositoryAsync(() => m_customerRepository.FindByNameContainsAsync(text), "IntegralCRMAppHelper.FindCustomerByNameContainsAsync");    
         
