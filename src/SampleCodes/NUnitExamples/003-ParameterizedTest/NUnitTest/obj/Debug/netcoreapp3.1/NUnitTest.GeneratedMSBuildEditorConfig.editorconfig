@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = CSD.Test
+build_property.ProjectDir = C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\003-ParameterizedTest\NUnitTest\

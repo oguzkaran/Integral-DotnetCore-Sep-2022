@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>CSD.Extensions.String</AssemblyName>
+    <RootNamespace>CSD.Extensions</RootNamespace>
+  </PropertyGroup>
+
+</Project>

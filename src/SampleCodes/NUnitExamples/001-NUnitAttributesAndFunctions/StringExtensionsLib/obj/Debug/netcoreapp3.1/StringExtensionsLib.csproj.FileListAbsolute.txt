@@ -1,0 +1,9 @@
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\bin\Debug\netcoreapp3.1\CSD.Extensions.String.deps.json
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\bin\Debug\netcoreapp3.1\CSD.Extensions.String.dll
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\bin\Debug\netcoreapp3.1\CSD.Extensions.String.pdb
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\obj\Debug\netcoreapp3.1\StringExtensionsLib.csprojAssemblyReference.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\obj\Debug\netcoreapp3.1\StringExtensionsLib.AssemblyInfoInputs.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\obj\Debug\netcoreapp3.1\StringExtensionsLib.AssemblyInfo.cs
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\obj\Debug\netcoreapp3.1\StringExtensionsLib.csproj.CoreCompileInputs.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\obj\Debug\netcoreapp3.1\CSD.Extensions.String.dll
+C:\Users\Karans\Dropbox\CSD\Kurslar\Siemens-DotnetAppII-III-Sep-2020\src\054-NUnit\NUnit\StringExtensionsLib\obj\Debug\netcoreapp3.1\CSD.Extensions.String.pdb

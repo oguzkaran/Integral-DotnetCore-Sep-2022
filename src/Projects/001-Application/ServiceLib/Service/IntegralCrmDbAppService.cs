@@ -2,10 +2,13 @@
 using Integral.CRM.Data.DAL;
 using Integral.CRM.Data.Service.DTO;
 
+using Integral.CRM.Data.Repository.Entity;
 using CSD.Util.Mappers;
+
 using CSD.Util.Data.Repository;
 using CSD.Util.Data.Service;
-using Integral.CRM.Data.Repository.Entity;
+
+using static CSD.Util.Data.DatabaseUtil;
 
 namespace Integral.CRM.Data.Service;
 
@@ -20,21 +23,8 @@ public class IntegralCrmDbAppService
         m_mapper = mapper;
     }
 
-    public async Task<CustomerDTO> SaveCustomerAsync(CustomerDTO customer)
-    {
-        try
-        {
-            //...
-            return m_mapper.Map<CustomerDTO, Customer>(await m_integralCRMAppHelper.SaveCustomerAsync(m_mapper.Map<Customer, CustomerDTO>(customer)));
-        }
-        catch (RepositoryException ex)
-        {
-            throw new DataServiceException("IntegralCrmDbAppService.SaveCustomerAsync", ex.InnerException);
-        }
-        catch (Exception ex) {
-            throw new DataServiceException("IntegralCrmDbAppService.SaveCustomerAsync", ex);
-        }
-    }
+    public async Task<CustomerDTO> SaveCustomerAsync(CustomerDTO customer) =>
+        m_mapper.Map<CustomerDTO, Customer>(await SubscribeServiceAsync(() => m_integralCRMAppHelper.SaveCustomerAsync(m_mapper.Map<Customer, CustomerDTO>(customer)), "IntegralCrmDbAppService.SaveCustomerAsync"));
 
     public Task<IEnumerable<CustomerDTO>> FindCustomerByNameAsync(string name)
     {

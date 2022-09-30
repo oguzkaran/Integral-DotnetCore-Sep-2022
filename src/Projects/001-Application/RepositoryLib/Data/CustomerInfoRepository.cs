@@ -13,7 +13,7 @@ using static CSD.Util.Async.TaskUtil;
 
 namespace Integral.CRM.Data.Repository;
 
-public class CustomerInfoRepository 
+public class CustomerInfoRepository : ICustomerInfoRepository
 {
     private readonly IntegralCrmdbContext m_context;
 

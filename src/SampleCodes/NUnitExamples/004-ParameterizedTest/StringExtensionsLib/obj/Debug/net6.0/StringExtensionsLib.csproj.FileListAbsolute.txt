@@ -1,0 +1,12 @@
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\bin\Debug\net6.0\CSD.Extensions.String.deps.json
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\bin\Debug\net6.0\CSD.Extensions.String.dll
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\bin\Debug\net6.0\CSD.Extensions.String.pdb
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\StringExtensionsLib.csproj.AssemblyReference.cache
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\StringExtensionsLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\StringExtensionsLib.AssemblyInfoInputs.cache
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\StringExtensionsLib.AssemblyInfo.cs
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\StringExtensionsLib.csproj.CoreCompileInputs.cache
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\CSD.Extensions.String.dll
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\refint\CSD.Extensions.String.dll
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\CSD.Extensions.String.pdb
+C:\Users\Karans\Desktop\Unity-Work\NUnitExamples\004-ParameterizedTest\StringExtensionsLib\obj\Debug\net6.0\ref\CSD.Extensions.String.dll

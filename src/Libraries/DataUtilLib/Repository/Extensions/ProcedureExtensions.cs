@@ -36,7 +36,6 @@ namespace CSD.Util.Data.Repository.Extensions
             return list;            
         }
 
-
         public static DbCommand LoadProcedure(this DbContext context, string name)
         {
             var cmd = context.Database.GetDbConnection().CreateCommand();

@@ -12,7 +12,8 @@ public class CustomerRepository : ICustomerRepository
     #region callback methods
     private Customer saveAsyncCallback(Customer customer)
     {
-        m_context.Database.ExecuteSqlRaw("exec sp_insert_customer {0}, {1}", customer.CustomerName, customer.CustomerAddress);
+        m_context.Database.ExecuteSqlRaw("exec sp_insert_customer {0}, {1}, {2}, {3}", 
+            customer.CustomerName!, customer.CustomerAddress!, customer.RegistrationDate, customer.IsActive);
         
         return customer;
     }

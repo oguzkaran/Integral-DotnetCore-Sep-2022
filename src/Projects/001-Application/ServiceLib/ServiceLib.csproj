@@ -22,7 +22,6 @@
 	<PackageReference Include="Mapster" Version="7.3.0" />
   </ItemGroup>
 
-
   <ItemGroup>
     <ProjectReference Include="..\RepositoryLib\RepositoryLib.csproj" />
   </ItemGroup>
@@ -31,13 +30,14 @@
 	<Reference Include="CSD.Util.Async">
 	  <HintPath>..\..\..\Libraries\AsyncUtilLib\bin\Release\net6.0\CSD.Util.Async.dll</HintPath>
 	</Reference>
+
 	<Reference Include="CSD.Util.Data">
 	  <HintPath>..\..\..\Libraries\DataUtilLib\bin\Release\net6.0\CSD.Util.Data.dll</HintPath>
 	</Reference>
+
 	<Reference Include="CSD.Util.Mappers">
 	  <HintPath>..\..\..\Libraries\MapperUtilLib\bin\Release\net6.0\CSD.Util.Mappers.dll</HintPath>
-	</Reference>
+	</Reference>	
   </ItemGroup>
-
 
 </Project>

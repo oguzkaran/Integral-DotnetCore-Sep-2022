@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RepositoryLib\RepositoryLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Reference Include="CSD.Util.Async">
+	  <HintPath>..\..\..\Libraries\AsyncUtilLib\bin\Release\net6.0\CSD.Util.Async.dll</HintPath>
+	</Reference>
+	<Reference Include="CSD.Util.Data">
+	  <HintPath>..\..\..\Libraries\DataUtilLib\bin\Release\net6.0\CSD.Util.Data.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+
+</Project>
