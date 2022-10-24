@@ -32,7 +32,7 @@ namespace CSD.Test.NUnit
         [Test, TestCaseSource("Source")]
         public void TestIsPalindrome(Tuple<string, bool> dataInfo)
         {
-            AreEqual(dataInfo.Item2, dataInfo.Item1.IsPalindrome());            
+            AreEqual(dataInfo.Item2, dataInfo.Item1.IsPalindrome());
         }        
     }
 }

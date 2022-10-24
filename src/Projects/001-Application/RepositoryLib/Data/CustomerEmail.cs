@@ -7,5 +7,5 @@ public partial class CustomerEmail
 {
     public int CustomerEmailId { get; set; }
     public int CustomerId { get; set; }
-    public string Email { get; set; }    
+    public string? Email { get; set; }    
 }

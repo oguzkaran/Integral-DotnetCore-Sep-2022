@@ -1,12 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
-using Microsoft.EntityFrameworkCore;
 using System.Data.Common;
+using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace CSD.Util.Data.Repository.Extensions
 {
@@ -37,7 +36,7 @@ namespace CSD.Util.Data.Repository.Extensions
         }
 
         public static DbCommand LoadProcedure(this DbContext context, string name)
-        {
+        {            
             var cmd = context.Database.GetDbConnection().CreateCommand();
 
             cmd.CommandText = name;
@@ -60,10 +59,20 @@ namespace CSD.Util.Data.Repository.Extensions
         }
 
         public static IEnumerable<T> ExecuteProcedure<T>(this DbCommand cmd) where T: class
-        {            
-            using (var reader = cmd.ExecuteReader())
+        {
+            if (cmd.Connection.State != ConnectionState.Open)
+                cmd.Connection.Open();
+
+            try
             {
-                return reader.MapToList<T>();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    return reader.MapToList<T>();
+                }
+            }
+            finally
+            {
+                cmd.Connection.Close();
             }
         }
 

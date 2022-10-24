@@ -19,7 +19,7 @@ public class CustomerInfoRepository : ICustomerInfoRepository
 
     #region callback methods
     private IEnumerable<CustomerInfo> findCustomerInfoByNameCallback(string name) 
-        => m_context.LoadProcedure("sp_get_customer_by_name").SetParameters(("@name", name)).ExecuteProcedure<CustomerInfo>();    
+        => m_context.LoadProcedure("sp_get_customerinfo_by_name").SetParameters(("@name", name)).ExecuteProcedure<CustomerInfo>();    
 
     #endregion
 

@@ -11,9 +11,9 @@ public interface ICrudRepositoryAsync<T, Id>
 
     Task<IEnumerable<T>> FindAllAsync();
 
-    void DeleteAsync(T t);
+    Task DeleteAsync(T t);
 
-    void DeleteByIdAsync(Id id);
+    Task DeleteByIdAsync(Id id);
 
     Task<bool> ExistsByIdAsync(Id id);
 

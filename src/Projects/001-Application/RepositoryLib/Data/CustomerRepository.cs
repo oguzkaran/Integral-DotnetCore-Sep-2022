@@ -1,4 +1,5 @@
-﻿using Integral.CRM.Data.Repository.Entity;
+﻿using CSD.Data.Repository;
+using Integral.CRM.Data.Repository.Entity;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using static CSD.Util.Async.TaskUtil;
@@ -18,7 +19,10 @@ public class CustomerRepository : ICustomerRepository
         return customer;
     }
 
-    private IEnumerable<Customer> findByNameCallback(string name) => m_context.Customers.FromSqlRaw("exec sp_get_customer_by_name", name).ToList();  
+    private void deleteByKeyAsyncCallback(int id) => m_context.Database.ExecuteSqlRaw("exec sp_delete_customer {0}", id);        
+    
+
+    private IEnumerable<Customer> findByNameCallback(string name) => m_context.Customers.FromSqlRaw("exec sp_get_customer_by_name {0}", name).ToList();  
 
     private IEnumerable<Customer> findByNameContainsCallback(string name)
     {
@@ -28,6 +32,11 @@ public class CustomerRepository : ICustomerRepository
 
         return list;
     }
+
+    public Task DeleteByKeyAsync(int id) => CreateTaskAsync(() => deleteByKeyAsyncCallback(id));
+
+    public Task DeleteAll() => Create(() => m_context.Database.ExecuteSqlRaw("exec sp_delete_all_customer"));
+    
 
     #endregion
 
@@ -41,24 +50,21 @@ public class CustomerRepository : ICustomerRepository
 
     public Task<IEnumerable<Customer>> FindByNameAsync(string name) => CreateTaskAsync(() => findByNameCallback(name));
 
-    public Task<IEnumerable<Customer>> FindByNameContainsAsync(string text) => CreateTaskAsync(() => findByNameContainsCallback(text));    
+    public Task<IEnumerable<Customer>> FindByNameContainsAsync(string text) => CreateTaskAsync(() => findByNameContainsCallback(text));
 
     #endregion
+
+    #region Not Implemented methods
 
     public Task<long> CountAsync()
     {        
         throw new NotImplementedException();
     }
 
-    public void DeleteAsync(Customer t)
+    public Task DeleteAsync(Customer t)
     {
         throw new NotImplementedException();
-    }
-
-    public void DeleteByIdAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
+    }    
 
     public Task<bool> ExistsByIdAsync(int id)
     {
@@ -83,12 +89,20 @@ public class CustomerRepository : ICustomerRepository
     public Task<IEnumerable<Customer>> FindByIdsAsync(IEnumerable<int> ids)
     {
         throw new NotImplementedException();
-    }   
-
+    }
     
 
     public Task<IEnumerable<Customer>> SaveAsync(IEnumerable<Customer> entities)
     {
         throw new NotImplementedException();
     }
+
+    public Task DeleteByIdAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    
+
+    #endregion
 }

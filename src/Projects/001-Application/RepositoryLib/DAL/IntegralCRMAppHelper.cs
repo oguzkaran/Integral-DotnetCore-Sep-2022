@@ -26,10 +26,13 @@ public class IntegralCRMAppHelper
     public Task<Customer> SaveCustomerAsync(Customer customer)
         => SubscribeRepositoryAsync(() => m_customerRepository.SaveAsync(customer), "IntegralCRMAppHelper.SaveCustomerAsync");
 
+    public Task DeleteCustomerByKeyAsync(int id) => SubscribeRepositoryAsync(() => m_customerRepository.DeleteByKeyAsync(id), "IntegralCRMAppHelper.DeleteCustomerByKeyAsync");
+
+    public Task DeleteAllCustomer() => SubscribeRepositoryAsync(() => m_customerRepository.DeleteAll(), "IntegralCRMAppHelper.DeleteAllCustomer");
+
     public Task<IEnumerable<Customer>> FindCustomerByNameAsync(string name) => SubscribeRepositoryAsync(() => m_customerRepository.FindByNameAsync(name), "IntegralCRMAppHelper.FindCustomerByNameAsync");
 
     public Task<IEnumerable<CustomerInfo>> FindCustomerInfoByNameAsync(string name) => SubscribeRepositoryAsync(() => m_customerInfoRepository.FindByNameAsync(name), "IntegralCRMAppHelper.FindCustomerInfoByNameAsync");
 
-    public Task<IEnumerable<Customer>> FindCustomerByNameContainsAsync(string text) => SubscribeRepositoryAsync(() => m_customerRepository.FindByNameContainsAsync(text), "IntegralCRMAppHelper.FindCustomerByNameContainsAsync");    
-        
+    public Task<IEnumerable<Customer>> FindCustomerByNameContainsAsync(string text) => SubscribeRepositoryAsync(() => m_customerRepository.FindByNameContainsAsync(text), "IntegralCRMAppHelper.FindCustomerByNameContainsAsync");        
 }
