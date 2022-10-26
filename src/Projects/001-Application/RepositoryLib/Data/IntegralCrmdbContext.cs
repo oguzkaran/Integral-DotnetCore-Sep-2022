@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Integral.CRM.Data.Repository;
 
-public partial class IntegralCrmdbContext : DbContext
+partial class IntegralCrmdbContext : DbContext
 {
     public IntegralCrmdbContext()
     {

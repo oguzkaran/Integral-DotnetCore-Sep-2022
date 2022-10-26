@@ -1,0 +1,12 @@
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\bin\Release\net6.0\CSD.Util.Error.deps.json
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\bin\Release\net6.0\CSD.Util.Error.dll
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\bin\Release\net6.0\CSD.Util.Error.pdb
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\ExceptionUtilLib.csproj.AssemblyReference.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\ExceptionUtilLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\ExceptionUtilLib.AssemblyInfoInputs.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\ExceptionUtilLib.AssemblyInfo.cs
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\ExceptionUtilLib.csproj.CoreCompileInputs.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\CSD.Util.Error.dll
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\refint\CSD.Util.Error.dll
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\CSD.Util.Error.pdb
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Libraries\ExceptionUtilLib\obj\Release\net6.0\ref\CSD.Util.Error.dll

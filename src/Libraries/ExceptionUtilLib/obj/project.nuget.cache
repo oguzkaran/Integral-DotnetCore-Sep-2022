@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LTMDqggRkJRz9bZCRw8zqQW5PtVp99Uvl3TrFBlT1H82NkLHvuFa8lwa2mnAdj1PfKxBWtEzHb9I75QAa/X1mw==",
+  "dgSpecHash": "I+Qope8DR0KIQ//pLv6ZbfXp0JEnH7Cin1dbot+g9bHSoqeUsRP9pFnus4R0JWZj4sEYK8LE56Bte0AAlT+xnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\DotnetCore-JS-WebProg-Aug-2021\\src\\DotnetCore\\Libraries\\ExceptionUtilLib\\ExceptionUtilLib.csproj",
+  "projectFilePath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Integral-DotnetCore-Sep-2022\\src\\Libraries\\ExceptionUtilLib\\ExceptionUtilLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

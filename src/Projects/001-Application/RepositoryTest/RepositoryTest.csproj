@@ -23,7 +23,8 @@
 	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9">
 	  <PrivateAssets>all</PrivateAssets>
 	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	</PackageReference>
+	</PackageReference>	
+	
   </ItemGroup>
 
   <ItemGroup>

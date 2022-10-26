@@ -7,9 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryLib", "Repository
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLib", "..\ServiceLib\ServiceLib.csproj", "{CEF6865C-D015-45BF-B10C-F74DB8C91FA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegralWebServiceApplication", "..\IntegralWebServiceApplication\IntegralWebServiceApplication.csproj", "{ECBE5585-CA4E-4B99-94DE-57D4F4BBED77}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryTest", "..\RepositoryTest\RepositoryTest.csproj", "{598BBAF3-BE1A-48D6-8881-7F152DF08796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegralWebServiceApplication", "..\IntegralWebServiceApplication\IntegralWebServiceApplication.csproj", "{ECBE5585-CA4E-4B99-94DE-57D4F4BBED77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{ECBE5585-CA4E-4B99-94DE-57D4F4BBED77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECBE5585-CA4E-4B99-94DE-57D4F4BBED77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECBE5585-CA4E-4B99-94DE-57D4F4BBED77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{598BBAF3-BE1A-48D6-8881-7F152DF08796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{598BBAF3-BE1A-48D6-8881-7F152DF08796}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{598BBAF3-BE1A-48D6-8881-7F152DF08796}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{598BBAF3-BE1A-48D6-8881-7F152DF08796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,6 +24,10 @@
 	  <HintPath>..\..\..\Libraries\DataUtilLib\bin\Release\net6.0\CSD.Util.Data.dll</HintPath>
 	</Reference>
 
+	<Reference Include="CSD.Util.Error">
+	  <HintPath>..\..\..\Libraries\ExceptionUtilLib\bin\Release\net6.0\CSD.Util.Error.dll</HintPath>
+	</Reference>
+
 	<Reference Include="CSD.Util.Mappers">
 	  <HintPath>..\..\..\Libraries\MapperUtilLib\bin\Release\net6.0\CSD.Util.Mappers.dll</HintPath>
 	</Reference>

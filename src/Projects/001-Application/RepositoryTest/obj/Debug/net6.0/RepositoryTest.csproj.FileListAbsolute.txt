@@ -1,0 +1,6 @@
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Projects\001-Application\RepositoryTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Projects\001-Application\RepositoryTest\obj\Debug\net6.0\RepositoryTest.csproj.AssemblyReference.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Projects\001-Application\RepositoryTest\obj\Debug\net6.0\RepositoryTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Projects\001-Application\RepositoryTest\obj\Debug\net6.0\RepositoryTest.AssemblyInfoInputs.cache
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Projects\001-Application\RepositoryTest\obj\Debug\net6.0\RepositoryTest.AssemblyInfo.cs
+C:\Users\Karans\Dropbox\CSD\Kurslar\Integral-DotnetCore-Sep-2022\src\Projects\001-Application\RepositoryTest\obj\Debug\net6.0\RepositoryTest.csproj.CoreCompileInputs.cache

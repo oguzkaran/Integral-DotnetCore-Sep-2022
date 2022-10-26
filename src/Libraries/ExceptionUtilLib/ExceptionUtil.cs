@@ -1,168 +1,167 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace CSD.Util.Error
+namespace CSD.Util.Error;
+
+public static class ExceptionUtil
 {
-    public static class ExceptionUtil
+    public static void Subscribe(Action action, Action<Exception> exceptionAction)
     {
-        public static void Subscribe(Action action, Action<Exception> exceptionAction)
+        try
         {
-            try
-            {
-                action();
-            }
-            catch (Exception ex) 
-            {
-                exceptionAction(ex);
-            }
+            action();
         }
-
-        public static void Subscribe(Action action, Action<Exception> exceptionAction, Action completed)
+        catch (Exception ex) 
         {
-            try
-            {
-                action();
-            }
-            catch (Exception ex)
-            {
-                exceptionAction(ex);
-            }
-            finally
-            {
-                completed();
-            }
+            exceptionAction(ex);
         }
+    }
 
-        public static void Subscribe(Action action, Action completed)
+    public static void Subscribe(Action action, Action<Exception> exceptionAction, Action completed)
+    {
+        try
         {
-            try
-            {
-                action();
-            }            
-            finally
-            {
-                completed();
-            }
+            action();
         }
-
-        public static async Task SubscribeAsync(Func<Task> func, Func<Exception, Task> exceptionAction)
+        catch (Exception ex)
         {
-            try
-            {
-                await func();
-            }
-            catch (Exception ex)
-            {
-                await exceptionAction(ex);
-            }
+            exceptionAction(ex);
         }
-
-        public static async Task SubscribeAsync(Func<Task> func, Func<Exception, Task> exceptionAction, Func<Task> completed)
+        finally
         {
-            try
-            {
-                await func();
-            }
-            catch (Exception ex)
-            {
-                await exceptionAction(ex);
-            }
-            finally
-            {
-                await completed();
-            }
+            completed();
         }
+    }
 
-        public static async Task SubscribeAsync(Func<Task> func, Func<Task> completed)
+    public static void Subscribe(Action action, Action completed)
+    {
+        try
         {
-            try
-            {
-                await func();
-            }            
-            finally
-            {
-                await completed();
-            }
+            action();
+        }            
+        finally
+        {
+            completed();
         }
+    }
 
-
-        public static R Subscribe<R>(Func<R> func, Func<Exception, R> exceptionFunc)
+    public static async Task SubscribeAsync(Func<Task> func, Func<Exception, Task> exceptionAction)
+    {
+        try
         {
-            try
-            {
-                return func();
-            }
-            catch (Exception ex) {
-                return exceptionFunc(ex);
-            }
+            await func();
         }
-
-        public static R Subscribe<R>(Func<R> func, Func<Exception, R> exceptionFunc, Action completed)
+        catch (Exception ex)
         {
-            try
-            {
-                return func();
-            }
-            catch (Exception ex)
-            {
-                return exceptionFunc(ex);
-            }
-            finally 
-            {
-                completed();
-            }            
+            await exceptionAction(ex);
         }
+    }
 
-        public static R Subscribe<R>(Func<R> func, Action completed)
+    public static async Task SubscribeAsync(Func<Task> func, Func<Exception, Task> exceptionAction, Func<Task> completed)
+    {
+        try
         {
-            try
-            {
-                return func();
-            }            
-            finally
-            {
-                completed();
-            }
+            await func();
         }
-
-        public static async Task<R> SubscribeAsync<R>(Func<Task<R>> func, Func<Exception, Task<R>> exceptionFunc)
+        catch (Exception ex)
         {
-            try
-            {
-                return await func();
-            }
-            catch (Exception ex)
-            {
-                return await exceptionFunc(ex);
-            }
+            await exceptionAction(ex);
         }
-
-        public static async Task<R> SubscribeAsync<R>(Func<Task<R>> func, Func<Exception, Task<R>> exceptionFunc, Func<Task> completed)
+        finally
         {
-            try
-            {
-                return await func();
-            }
-            catch (Exception ex)
-            {
-                return await exceptionFunc(ex);
-            }
-            finally
-            {
-                await completed();
-            }
+            await completed();
         }
+    }
 
-        public static async Task<R> SubscribeAsync<R>(Func<Task<R>> func, Func<Task> completed)
+    public static async Task SubscribeAsync(Func<Task> func, Func<Task> completed)
+    {
+        try
         {
-            try
-            {                
-                return await func();
-            }            
-            finally
-            {
-                await completed();
-            }
+            await func();
+        }            
+        finally
+        {
+            await completed();
+        }
+    }
+
+
+    public static R Subscribe<R>(Func<R> func, Func<Exception, R> exceptionFunc)
+    {
+        try
+        {
+            return func();
+        }
+        catch (Exception ex) {
+            return exceptionFunc(ex);
+        }
+    }
+
+    public static R Subscribe<R>(Func<R> func, Func<Exception, R> exceptionFunc, Action completed)
+    {
+        try
+        {
+            return func();
+        }
+        catch (Exception ex)
+        {
+            return exceptionFunc(ex);
+        }
+        finally 
+        {
+            completed();
+        }            
+    }
+
+    public static R Subscribe<R>(Func<R> func, Action completed)
+    {
+        try
+        {
+            return func();
+        }            
+        finally
+        {
+            completed();
+        }
+    }
+
+    public static async Task<R> SubscribeAsync<R>(Func<Task<R>> func, Func<Exception, Task<R>> exceptionFunc)
+    {
+        try
+        {
+            return await func();
+        }
+        catch (Exception ex)
+        {
+            return await exceptionFunc(ex);
+        }
+    }
+
+    public static async Task<R> SubscribeAsync<R>(Func<Task<R>> func, Func<Exception, Task<R>> exceptionFunc, Func<Task> completed)
+    {
+        try
+        {
+            return await func();
+        }
+        catch (Exception ex)
+        {
+            return await exceptionFunc(ex);
+        }
+        finally
+        {
+            await completed();
+        }
+    }
+
+    public static async Task<R> SubscribeAsync<R>(Func<Task<R>> func, Func<Task> completed)
+    {
+        try
+        {                
+            return await func();
+        }            
+        finally
+        {
+            await completed();
         }
     }
 }
