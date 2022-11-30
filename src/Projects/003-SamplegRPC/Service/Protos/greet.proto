@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "CSD.gRPC.Greeting.Service";
+
+package greet;
+
+service Greeter {  
+  rpc SayHello (HelloRequest) returns (HelloReply);  
+  rpc GenerateNumbers(Info) returns (stream Result);  
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+message Info {
+	fixed32 count = 1;
+	fixed32 min = 2;
+	fixed32 bound = 3;
+}
+
+message Result {
+	fixed32 value = 1;
+}
